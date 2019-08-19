@@ -1,0 +1,288 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+#image-w {
+    width: 552px;
+    height: 700px;
+    overflow: hidden;
+}
+
+.content {
+    width: 100%;
+    max-width: 555px;
+    height: 730px;
+}
+
+section,
+.header-hero {
+    display: flex;
+    width: 100%;
+    max-width: 1510px;
+    margin: 0 auto;
+}
+
+.header-hero {
+    .profile-picture {
+        width: 100%;
+        max-width: 555px;
+        height: 730px;
+        .picture {
+            width: 100%;
+            height: 100%;
+            background-image: url("./assets/img/Profile.jpg");
+            background-attachment: fixed;
+        }
+    }
+    .presentation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .details {
+            margin: auto;
+            .profile-details {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 26px;
+                line-height: 150.4%;
+                /* or 39px */
+                color: #000000;
+            }
+            .tag-name {
+                h2 {
+                    font-size: 37;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+            }
+            button {
+                width: 143px;
+                height: 48px;
+                background: #FFA740;
+                box-shadow: 3px 5px 14px rgba(255, 167, 64, 0.54);
+                border-radius: 44px;
+                border: none;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.short-blue {
+    transform: skewY(-4deg);
+    height: 416px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 36px;
+    .min-wrapper {
+        // transform: skewY(-10deg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 319px;
+        height: 100%;
+        background: #303D60;
+        .text-wrapper-blue {
+            width: 213px;
+            margin: 0 auto;
+            p {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 150.4%;
+                /* or 24px */
+                letter-spacing: 0.075em;
+                color: #FFFFFF;
+                color: #ffffff;
+                transform: skewY(4deg);
+            }
+        }
+        &.medium-light {
+            background: #40507A;
+        }
+        &.light {
+            background: #4E6193;
+        }
+    }
+}
+
+.image-container {
+    overflow: hidden;
+    img {
+        width: 100%;
+    }
+}
+
+.information {
+    height: 519px;
+    max-width: 1510px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .who-container {
+        display: flex;
+        align-items: flex-start;
+        height: 300px;
+        justify-content: space-around;
+        width: 100%;
+        .who {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .who-title {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 150.4%;
+            /* or 36px */
+            color: #303D60;
+        }
+        .who-text {
+            color: #ffffff;
+            width: 100%;
+            max-width: 727px;
+        }
+    }
+}
+
+.info-background {
+    height: 519px;
+    max-width: 1510px;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(89.56deg, #FFA740 0.08%, #FFBE40 97.75%);
+    top: -134px;
+    z-index: -1;
+}
+
+.who-bg {
+    p {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 114px;
+        line-height: 150.4%;
+        /* or 171px */
+        letter-spacing: 0.07em;
+        color: #FCD17F;
+    }
+}
+
+.what {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.regular {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    .title-wrapper {
+        h3 {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 21px;
+            line-height: 150.4%;
+            /* or 32px */
+            color: #000000;
+        }
+    }
+    .text-wrapper {
+        max-width: 617px;
+        width: 100%;
+        p {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 150.4%;
+            /* or 24px */
+            letter-spacing: 0.075em;
+            color: #858585;
+        }
+    }
+}
+
+@media screen and (max-width:1476px) {
+    header {
+        flex-direction: column;
+    }
+    section {
+        width: 960px;
+    }
+    .short-blue {
+        flex-direction: column;
+        .min-wrapper {
+            width: 100%;
+        }
+    }
+    .details {
+        display: none;
+    }
+    .content {
+        width: 960px;
+        max-width: 900px;
+        /* height: 730px; */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        .image-container {
+            width: 460px;
+        }
+        .header-hero {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .presentation {
+            width: 100%;
+            .details {
+                display: none;
+            }
+        }
+        #hero-details {
+            display: block;
+        }
+    }
+    .details {
+        margin: none;
+        .profile-details {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 26px;
+            line-height: 150.4%;
+            /* or 39px */
+            color: #000000;
+        }
+        .tag-name {
+            h2 {
+                font-size: 37;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+        button {
+            width: 143px;
+            height: 48px;
+            background: #FFA740;
+            box-shadow: 3px 5px 14px rgba(255, 167, 64, 0.54);
+            border-radius: 44px;
+            border: none;
+            color: #fff;
+        }
+    }
+}
