@@ -11,6 +11,10 @@
   overflow: hidden;
 }
 
+#heros-details {
+  display: none;
+}
+
 .content {
   width: 100%;
   max-width: 555px;
@@ -36,7 +40,6 @@ section,
 .header-hero .profile-picture .picture {
   width: 100%;
   height: 100%;
-  background-image: url("./assets/img/Profile.jpg");
   background-attachment: fixed;
 }
 
@@ -145,7 +148,7 @@ section,
 }
 
 .image-container img {
-  width: 100%;
+  width: 553px;
 }
 
 .information {
@@ -276,7 +279,15 @@ section,
   color: #858585;
 }
 
+.image-container {
+  max-width: 553px;
+  width: 100%;
+}
+
 @media screen and (max-width: 1476px) {
+  img {
+    width: 100%;
+  }
   header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -286,11 +297,16 @@ section,
   section {
     width: 960px;
   }
+  #heros-details {
+    display: block;
+    text-align: center;
+  }
   .short-blue {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 940px;
   }
   .short-blue .min-wrapper {
     width: 100%;
@@ -299,8 +315,8 @@ section,
     display: none;
   }
   .content {
-    width: 960px;
-    max-width: 900px;
+    width: 100%;
+    max-width: 960px;
     /* height: 730px; */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -308,9 +324,18 @@ section,
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
   }
   .content .image-container {
-    width: 460px;
+    width: 100%;
+    max-width: 460px;
   }
   .content .header-hero {
     -webkit-box-orient: vertical;

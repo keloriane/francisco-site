@@ -11,6 +11,10 @@
     overflow: hidden;
 }
 
+#heros-details {
+    display: none;
+}
+
 .content {
     width: 100%;
     max-width: 555px;
@@ -33,7 +37,7 @@ section,
         .picture {
             width: 100%;
             height: 100%;
-            background-image: url("./assets/img/Profile.jpg");
+            // background-image: url("./assets/img/Profile.jpg");
             background-attachment: fixed;
         }
     }
@@ -114,7 +118,7 @@ section,
 .image-container {
     overflow: hidden;
     img {
-        width: 100%;
+        width: 553px;
     }
 }
 
@@ -214,15 +218,28 @@ section,
     }
 }
 
+.image-container {
+    max-width: 553px;
+    width: 100%;
+}
+
 @media screen and (max-width:1476px) {
+    img {
+        width: 100%;
+    }
     header {
         flex-direction: column;
     }
     section {
         width: 960px;
     }
+    #heros-details {
+        display: block;
+        text-align: center;
+    }
     .short-blue {
         flex-direction: column;
+        height: 940px;
         .min-wrapper {
             width: 100%;
         }
@@ -231,8 +248,8 @@ section,
         display: none;
     }
     .content {
-        width: 960px;
-        max-width: 900px;
+        width: 100%;
+        max-width: 960px;
         /* height: 730px; */
         display: -webkit-box;
         display: -ms-flexbox;
@@ -240,8 +257,12 @@ section,
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
         .image-container {
-            width: 460px;
+            width: 100%;
+            max-width: 460px;
         }
         .header-hero {
             flex-direction: column;
